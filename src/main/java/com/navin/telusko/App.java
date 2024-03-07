@@ -17,8 +17,9 @@ public class App
          */
       ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         
-        
-     Vehicle obj = (Vehicle) context.getBean("vehicle");
-     obj.drive();
+        // the parameter in the get bean is the id  in the bean tag
+        Car obj = (Car) context.getBean("car");
+        obj.drive();
+
     }
 }

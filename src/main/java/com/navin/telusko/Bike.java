@@ -4,10 +4,13 @@
  */
 package com.navin.telusko;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author admin
  */
+@Component
 public class Bike implements Vehicle{
     @Override
     public void drive(){
