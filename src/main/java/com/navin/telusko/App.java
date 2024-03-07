@@ -12,7 +12,9 @@ public class App
 {
     public static void main( String[] args )
     {
-
+        /**
+         * Using dependency Injection; we are making use of loose coupling
+         */
       ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         
         
