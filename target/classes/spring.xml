@@ -16,11 +16,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 >
 <!--    <context:annotation-config></context:annotation-config>-->
     <context:component-scan base-package="com.navin.telusko"/>
-<!--    I autowired tyre to the class file , hence the reason for the bean-->
-    <bean id= "tyre" class ="com.navin.telusko.Tyre">
+<!--    I autowired(@Autowired) the Tyre class to the Bike and the Car class,
+        So I have to take the bean (id) of the tyre class
+        and if the tyre has a constructor or properties that I would want to use
+        I would fix them in the commented template below
+-->
+<!--    <bean id= "tyre" class ="com.navin.telusko.Tyre">-->
 <!--        <property name="brand" value="MRF"></property>-->
 <!--        <constructor-arg value="MRF"></constructor-arg>-->
-    </bean>
+<!--    </bean>-->
 <!--    <bean id="vehicle" class ="com.navin.telusko.Car" ></bean>-->
 </beans>
 

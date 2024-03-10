@@ -19,12 +19,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 <!--    I autowired(@Autowired) the Tyre class to the Bike and the Car class,
         So I have to take the bean (id) of the tyre class
         and if the tyre has a constructor or properties that I would want to use
-        I would fixed them in the commented template below
+        I would fix them in the commented template below
 -->
-    <bean id= "tyre" class ="com.navin.telusko.Tyre">
+<!--    <bean id= "tyre" class ="com.navin.telusko.Tyre">-->
 <!--        <property name="brand" value="MRF"></property>-->
 <!--        <constructor-arg value="MRF"></constructor-arg>-->
-    </bean>
+<!--    </bean>-->
 <!--    <bean id="vehicle" class ="com.navin.telusko.Car" ></bean>-->
 </beans>
 
