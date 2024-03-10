@@ -5,6 +5,7 @@
 package com.navin.telusko;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,6 +13,8 @@ import org.springframework.stereotype.Component;
  * @author admin
  */
 @Component
+@Scope(value = "prototype")
+//@scope(value= )
 public class Car  implements Vehicle{
     @Autowired
     private Tyre tyre;
@@ -27,6 +30,6 @@ public class Car  implements Vehicle{
     
     @Override
     public void drive(){
-        System.out.println("car" + ".............................."+tyre.toString());
+        System.out.println("car" + "............................Four "+tyre.toString());
     }
 }
