@@ -17,18 +17,15 @@ public class App
     {
         /**
          * Using dependency Injection; we are making use of loose coupling
+         * we can make use of the annotation injection
+         * or the bean(xml) injection
          */
       ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         
 //         the parameter in the get bean is the id  in the bean tag
         Car obj = (Car) context.getBean(Car.class);
         obj.drive();
-        
-//        Car obj_1 = (Car) context.getBean(Car.class);
-//        obj_1.drive();
-//
-//        Bike obj_2 = (Bike) context.getBean(Bike.class);
-//        obj_2.drive();
+
 
     }
 }
